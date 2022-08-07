@@ -20,8 +20,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Core\Core.csproj" />
-    <ProjectReference Include="..\Publisher\Publisher.csproj" />
-    <ProjectReference Include="..\Subscriber\SubscriberMqtt.csproj" />
+    <ProjectReference Include="..\Publisher\MqttPublisher.csproj" />
+    <ProjectReference Include="..\Subscriber\MqttSubsriber.csproj" />
   </ItemGroup>
 
   <ItemGroup>

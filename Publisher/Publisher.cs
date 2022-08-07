@@ -5,11 +5,11 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 namespace ERPConnector.Configuration.Mqtt.Publisher
 {
-    public class Pub : IPublisher
+    public class Publisher : IPublisher
     {
         private readonly IMqttConnection _mqttConnection;
 
-        public Pub(IMqttConnection mqttConnection)
+        public Publisher(IMqttConnection mqttConnection)
         {
             _mqttConnection = mqttConnection;
         }

@@ -9,13 +9,13 @@ using System.Text.Json;
 
 namespace Subscriber
 {
-    public class Sub : ISubscriber
+    public class Subscriber : ISubscriber
     {
         private readonly IMqttConnection _mqttConnection;
         private readonly IHttpConnector _httpConnector;
         private readonly IPublisher _publisher;
 
-        public Sub(
+        public Subscriber(
             IMqttConnection mqttConnection,
             IHttpConnector httpConnector,
             IPublisher publisher)

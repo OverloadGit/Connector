@@ -3,17 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32630.192
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERPConnector", "ERPConnector\ERPConnector.csproj", "{55E10E10-FCE7-49FE-9B08-E29E82C1CE0E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ERPConnector", "ERPConnector\ERPConnector.csproj", "{55E10E10-FCE7-49FE-9B08-E29E82C1CE0E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{E062B5AA-AE3B-4CF4-BC35-DCD17360F775}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{E062B5AA-AE3B-4CF4-BC35-DCD17360F775}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Publisher", "Publisher\Publisher.csproj", "{2C18E4BD-6AD0-4D6A-A445-1EF4B9F265A2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MqttPublisher", "Publisher\MqttPublisher.csproj", "{2C18E4BD-6AD0-4D6A-A445-1EF4B9F265A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubscriberMqtt", "Subscriber\SubscriberMqtt.csproj", "{022A5753-A737-4C82-84E1-6D02A9C82F59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MqttSubsriber", "Subscriber\MqttSubsriber.csproj", "{022A5753-A737-4C82-84E1-6D02A9C82F59}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources", "Resources\Resources.csproj", "{2E1B0105-9283-4AAD-873E-17B993C8E845}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Resources", "Resources\Resources.csproj", "{2E1B0105-9283-4AAD-873E-17B993C8E845}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ERPHttpConntector", "ERPHttpConntector\ERPHttpConntector.csproj", "{79504D29-7986-430B-BFF6-5712345AAEC7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ERPHttpConntector", "ERPHttpConntector\ERPHttpConntector.csproj", "{79504D29-7986-430B-BFF6-5712345AAEC7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dockerfiles", "Dockerfiles", "{505DE327-BAB9-465E-973C-5D81936E73AD}"
+	ProjectSection(SolutionItems) = preProject
+		mosquitto.conf = mosquitto.conf
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

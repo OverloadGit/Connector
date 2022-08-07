@@ -22,8 +22,8 @@ static void RegisterServices(IServiceCollection services)
 
     services
             .AddSingleton<IMqttConnection, MqttConnection>()
-            .AddScoped<ISubscriber, Sub>()
-            .AddScoped<IPublisher, Pub>()
+            .AddScoped<ISubscriber, Subscriber>()
+            .AddScoped<IPublisher, Publisher>()
             .AddScoped<IConfiguration>(_ => configuration)
             .AddScoped<IHttpConnector, HttpConnector>()
             .AddHttpClient();
